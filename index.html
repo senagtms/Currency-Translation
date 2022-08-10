@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-light shadow" style="background-color: #527a7a; height: 80px;">
+        <div class="container-fluid">
+          <a class="navbar-brand mx-4" style="color: beige; font-weight: 400px; font-size: 30px; font-family: 'Times New Roman', Times, serif;" href="#">Döviz Çeviri</a>
+        </div>
+      </nav>
+      
+      <div class="container my-5 ">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="currency-one" list="list_one" placeholder="Döviz kuru">
+                    <datalist id="list_one"></datalist>
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="currency-two" list="list_two" placeholder="Döviz kuru">
+                    <datalist id="list_two"></datalist>
+                </div>
+                <div class="mb-3">
+                    <input type="number" class="form-control" id="amount"  placeholder="miktar">
+                </div>
+                <button class="btn btn-outline-primary w-100 mb-3" id="calculate">Hesapla</button>
+                <div id="result">
+                    
+                </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+
+<script src="./app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" ></script>
+</body>
+</html>
